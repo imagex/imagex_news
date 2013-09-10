@@ -4,4 +4,4 @@
  * Code for the Linux News Article feature.
  */
 
-include_once 'imagex_news_article.features.inc';
+include_once 'imagex_news.features.inc';
