@@ -1,7 +1,7 @@
-name = ImageX News
+name = News
 description =  Image X News Content Type.
 core = 7.x
-package = Features
+package = ImageX
 php = 5.2.4
 version = 7.x-1.0-dev
 project = imagex_news
