@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Code for the Linux News Article feature.
+ * Code for the News feature.
  */
 
 include_once 'imagex_news.features.inc';
