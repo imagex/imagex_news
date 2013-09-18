@@ -1,56 +1,67 @@
 <?php
 /**
  * @file
- * imagex_news_article.features.user_permission.inc
+ * imagex_news.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function imagex_news_article_user_default_permissions() {
+function imagex_news_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: create news_article content.
-  $permissions['create news_article content'] = array(
-    'name' => 'create news_article content',
+  // Exported permission: create imagex_news content.
+  $permissions['create imagex_news content'] = array(
+    'name' => 'create imagex_news content',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Administrator' => 'Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: delete any news_article content.
-  $permissions['delete any news_article content'] = array(
-    'name' => 'delete any news_article content',
+  // Exported permission: delete any imagex_news content.
+  $permissions['delete any imagex_news content'] = array(
+    'name' => 'delete any imagex_news content',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Administrator' => 'Administrator',
+      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: delete own news_article content.
-  $permissions['delete own news_article content'] = array(
-    'name' => 'delete own news_article content',
+  // Exported permission: delete own imagex_news content.
+  $permissions['delete own imagex_news content'] = array(
+    'name' => 'delete own imagex_news content',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Administrator' => 'Administrator',
+      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: edit any news_article content.
-  $permissions['edit any news_article content'] = array(
-    'name' => 'edit any news_article content',
+  // Exported permission: edit any imagex_news content.
+  $permissions['edit any imagex_news content'] = array(
+    'name' => 'edit any imagex_news content',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Administrator' => 'Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
 
-  // Exported permission: edit own news_article content.
-  $permissions['edit own news_article content'] = array(
-    'name' => 'edit own news_article content',
+  // Exported permission: edit own imagex_news content.
+  $permissions['edit own imagex_news content'] = array(
+    'name' => 'edit own imagex_news content',
     'roles' => array(
-      'administrator' => 'administrator',
+      'Administrator' => 'Administrator',
+      'Content Creator' => 'Content Creator',
+      'Content Manager' => 'Content Manager',
+      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
