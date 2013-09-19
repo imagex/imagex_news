@@ -15,9 +15,9 @@ function imagex_news_user_default_permissions() {
     'name' => 'create imagex_news content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
@@ -27,7 +27,7 @@ function imagex_news_user_default_permissions() {
     'name' => 'delete any imagex_news content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
   );
@@ -37,7 +37,7 @@ function imagex_news_user_default_permissions() {
     'name' => 'delete own imagex_news content',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'System Administrator' => 'System Administrator',
+      'Content Administrator' => 'Content Administrator',
     ),
     'module' => 'node',
   );
@@ -47,9 +47,9 @@ function imagex_news_user_default_permissions() {
     'name' => 'edit any imagex_news content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
@@ -59,9 +59,9 @@ function imagex_news_user_default_permissions() {
     'name' => 'edit own imagex_news content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Content Administrator' => 'Content Administrator',
       'Content Creator' => 'Content Creator',
       'Content Manager' => 'Content Manager',
-      'System Administrator' => 'System Administrator',
     ),
     'module' => 'node',
   );
