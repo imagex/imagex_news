@@ -54,48 +54,6 @@ function imagex_news_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-imagex_news-field_file_attachment'
-  $field_instances['node-imagex_news-field_file_attachment'] = array(
-    'bundle' => 'imagex_news',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_file_attachment',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'jpeg gif png jpg',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'file',
-      'settings' => array(
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'file_generic',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'node-imagex_news-field_tags'
   $field_instances['node-imagex_news-field_tags'] = array(
     'bundle' => 'imagex_news',
@@ -139,7 +97,6 @@ function imagex_news_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Image');
   t('Tags');
 
   return $field_instances;
