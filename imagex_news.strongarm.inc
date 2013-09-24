@@ -13,6 +13,13 @@ function imagex_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_imagex_news';
+  $strongarm->value = 'edit-scheduler';
+  $export['additional_settings__active_tab_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_imagex_news';
   $strongarm->value = 0;
   $export['comment_anonymous_imagex_news'] = $strongarm;
@@ -106,8 +113,9 @@ function imagex_news_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_imagex_news';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
+    1 => 'moderation',
+    2 => 'revision',
   );
   $export['node_options_imagex_news'] = $strongarm;
 
@@ -124,6 +132,90 @@ function imagex_news_strongarm() {
   $strongarm->name = 'node_submitted_imagex_news';
   $strongarm->value = 1;
   $export['node_submitted_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_imagex_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_moderation_state_imagex_news';
+  $strongarm->value = 'published';
+  $export['scheduler_publish_moderation_state_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_required_imagex_news';
+  $strongarm->value = 0;
+  $export['scheduler_publish_required_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_revision_imagex_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_revision_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_touch_imagex_news';
+  $strongarm->value = 1;
+  $export['scheduler_publish_touch_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_default_time_imagex_news';
+  $strongarm->value = '';
+  $export['scheduler_unpublish_default_time_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_enable_imagex_news';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_enable_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_moderation_state_imagex_news';
+  $strongarm->value = 'draft';
+  $export['scheduler_unpublish_moderation_state_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_required_imagex_news';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_required_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_revision_imagex_news';
+  $strongarm->value = 0;
+  $export['scheduler_unpublish_revision_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_access_node_type_imagex_news';
+  $strongarm->value = 1;
+  $export['workbench_access_node_type_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'workbench_moderation_default_state_imagex_news';
+  $strongarm->value = 'draft';
+  $export['workbench_moderation_default_state_imagex_news'] = $strongarm;
 
   return $export;
 }
