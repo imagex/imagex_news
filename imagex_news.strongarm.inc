@@ -86,6 +86,9 @@ function imagex_news_strongarm() {
         'redirect' => array(
           'weight' => '3',
         ),
+        'workbench_access' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(),
     ),
