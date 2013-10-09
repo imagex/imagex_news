@@ -7,5 +7,6 @@ project = imagex_news_addthis
 dependencies[] = addthis
 dependencies[] = features
 dependencies[] = imagex_addthis
+dependencies[] = imagex_news
 features[features_api][] = api:1
 features[field_instance][] = node-imagex_news-field_addthis
