@@ -1,18 +1,13 @@
-##News Permissions
+## News Permissions
 
 Permissions for News Content Type
 
+## Dependencies
 
-##Fields
-N/A
-
-
-##Dependencies
-* Contrib: [Features] (https://drupal.org/project/features)  (>= 1.0)
+* Contrib: [Features] (https://drupal.org/project/features)  (>= 2.0)
 * Feature: [News] (https://github.com/imagex/imagex_news) 
 * Feature: [User Roles] (https://github.com/imagex/imagex_user_roles) 
 * Feature: [User Permissions] (https://github.com/imagex/imagex_user_permissions) 
-
 
 ## License
 

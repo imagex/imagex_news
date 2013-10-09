@@ -2,19 +2,12 @@
 
 Workbench and Scheduler settings for 'News' Content Type.
 
-##Fields
-
-N/A
-
-
-##Dependencies
+## Dependencies
 
 * Contrib: [Ctools] (https://drupal.org/project/addthis) (>= 1.3) 
-* Contrib: [Features] (https://drupal.org/project/features)  (>= 1.0)
-* Feature: [News] (https://github.com/imagex/imagex_addthis)
+* Contrib: [Features] (https://drupal.org/project/features)  (>= 2.0)
+* Contrib: [StrongArm] (https://drupal.org/project/strongarm) (>= 2.0)
 * Feature: [News] (https://github.com/imagex/imagex_news)
-
-
 
 ## License
 
