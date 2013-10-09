@@ -24,7 +24,8 @@ Base definition for 'News' content type.
 ## Extension Modules
 
 * **imagex_news_addthis*: Adds addthis field for social media to News content type.
-* **imagex_news_workflow*: Adds addthis field for social media to News content type.
+* **imagex_news_workflow*: Adds scheduler and workbench settings for News content type.
+* **imagex_news_permissions*: Adds permissions relevant to  News content type.
 
 ## License
 
