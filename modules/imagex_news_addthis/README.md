@@ -1,16 +1,16 @@
 ## News Addthis
 
-Addthis Social Media for the 'News' Content Type.
+This extension module of the Page component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for News content. 
 
-## Fields
+### Fields
 
 * Addthis
 
-## Dependencies
+### Dependencies
 
 * Contrib: [Ctools] (https://drupal.org/project/ctools) (>= 1.3) 
 * Contrib: [Features] (https://drupal.org/project/features)  (>= 2.0)
-* Feature: [News] (https://github.com/imagex/imagex_news)
+* ImageX Component: [News] (https://github.com/imagex/imagex_news) (>= 7.x-dev)
 
 ## License
 

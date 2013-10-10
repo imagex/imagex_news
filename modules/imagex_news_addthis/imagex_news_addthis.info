@@ -1,5 +1,5 @@
 name = News - Addthis
-description = Submodule of Add This social media field for News
+description = This extension module of the Page component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for News content.
 core = 7.x
 package = ImageX
 version = 7.x-1.0

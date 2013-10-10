@@ -1,8 +1,8 @@
 ## News
 
-Base definition for 'News' content type.
+This component enables content management of the standard News content and its layout. The default layout is configurable using panelizer.
 
-## Fields
+### Fields
 
 * Title
 * Image
@@ -12,20 +12,20 @@ Base definition for 'News' content type.
 * Meta tags
 * Tags
 
-## Dependencies
+### Dependencies
 
 * Contrib: [Ctools] (https://drupal.org/project/ctools) (>= 1.3) 
 * Contrib: [Features] (https://drupal.org/project/features)  (>= 2.0)
 * Contrib: [StrongArm] (https://drupal.org/project/strongarm) (>= 2.0)
 * Contrib: [Panelizer] (https://drupal.org/project/panelizer) (>= 3.1)
-* Feature: [Common Fields] (https://github.com/imagex/imagex_common_fields)
-* Feature: [User Roles] (https://github.com/imagex/imagex_user_roles)
+* ImageX Component: [Common Fields] (https://github.com/imagex/imagex_common_fields) (>= 7.x-dev)
+* ImageX Component: [User Roles] (https://github.com/imagex/imagex_user_roles) (>= 7.x-dev)
 
-## Extension Modules
+### Extension Modules
 
-* **imagex_news_addthis*: Adds addthis field for social media to News content type.
-* **imagex_news_workflow*: Adds scheduler and workbench settings for News content type.
-* **imagex_news_permissions*: Adds permissions relevant to  News content type.
+* **imagex_news_addthis*: This extension module of the News component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for News content. 
+* **imagex_news_workflow*: This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for News content.
+* **imagex_news_permissions*: This extension module of the News component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles). These permissions meet the  requirements to be used in conjunction with the ImageX [Workflow](http://github.com/imagex/imagex_workflow).
 
 ## License
 

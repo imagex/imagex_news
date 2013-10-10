@@ -1,5 +1,5 @@
 name = News
-description = Base definition for News Articles.
+description = This component enables content management of the standard News content and its layout. The default layout is configurable using panelizer.
 core = 7.x
 package = Imagex
 version = 7.x-1.0
