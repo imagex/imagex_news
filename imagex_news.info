@@ -1,5 +1,5 @@
 name = News
-description = Enables the capabilities for building News Articles.
+description = Base definition for News Articles.
 core = 7.x
 package = Imagex
 version = 7.x-1.0
