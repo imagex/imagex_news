@@ -8,7 +8,6 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = file
 dependencies[] = imagex_common_fields
-dependencies[] = imagex_user_roles_permissions
 dependencies[] = imagex_vocabulary_tags
 dependencies[] = panelizer
 dependencies[] = strongarm
