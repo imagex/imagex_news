@@ -1,7 +1,7 @@
 name = News Workflow
 description = This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for News content.
 core = 7.x
-package = Linux.com
+package = ImageX
 version = 7.x-1.0
 project = imagex_news_workflow
 dependencies[] = ctools
