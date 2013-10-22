@@ -99,8 +99,8 @@ function imagex_news_panelizer_defaults() {
     $pane->configuration = array(
       'link' => 0,
       'markup' => 'h1',
-      'id' => 'title',
-      'class' => '',
+      'id' => '',
+      'class' => 'title',
       'context' => 'panelizer',
       'override_title' => 1,
       'override_title_text' => '%node:title',
