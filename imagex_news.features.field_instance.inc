@@ -100,7 +100,7 @@ function imagex_news_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 7,
+      'weight' => 1,
     ),
     'workbench_access_field' => 0,
   );
@@ -141,7 +141,7 @@ function imagex_news_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 6,
+      'weight' => 3,
     ),
   );
 
