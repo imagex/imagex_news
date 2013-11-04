@@ -1,0 +1,13 @@
+name = Related Content - News
+description = Related content, by tag .  Sorted by tag, energy.
+core = 7.x
+package = ImageX
+version = 7.x-1.0
+project = imagex_related_content_news
+dependencies[] = views
+dependencies[] = views_content
+dependencies [] = imagex_news
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = imagex_related_content_news
+features_exclude[dependencies][ctools] = ctools

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Related Content - News feature.
+ */
+
+include_once 'imagex_related_content_news.features.inc';
