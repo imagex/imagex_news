@@ -34,7 +34,6 @@ features[image][] = news_author
 features[node][] = imagex_news
 features[panelizer_defaults][] = node:imagex_news:default
 features[panelizer_defaults][] = node:imagex_news:default:default
-features[taxonomy][] = tags
 features[uuid_node][] = cc69210b-36ab-45ee-928b-ffceb64c22a5
 features[uuid_term][] = 9caa27c7-96f7-44f2-bebf-79420537b4f3
 features[variable][] = additional_settings__active_tab_imagex_news
