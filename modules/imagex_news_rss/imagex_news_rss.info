@@ -1,4 +1,4 @@
-name = imagex_news_rss
+name = News RSS
 description = Extension module enabling RSS feeds for News content.
 core = 7.x
 package = ImageX
