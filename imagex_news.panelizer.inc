@@ -245,34 +245,6 @@ function imagex_news_panelizer_defaults() {
     $display->content['new-7'] = $pane;
     $display->panels['two_33_66_second'][6] = 'new-7';
     $pane = new stdClass();
-    $pane->pid = 'new-8';
-    $pane->panel = 'two_33_66_second';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_addthis';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'addthis_disabled',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'panelizer',
-      'override_title' => 1,
-      'override_title_text' => 'Share article',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 7;
-    $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['two_33_66_second'][7] = 'new-8';
-    $pane = new stdClass();
     $pane->pid = 'new-9';
     $pane->panel = 'two_33_66_second';
     $pane->type = 'entity_field';
