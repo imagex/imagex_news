@@ -23,7 +23,6 @@ This component enables content management of the standard News content and its l
 
 ### Extension Modules
 
-* **imagex_news_addthis*: This extension module of the News component integrates [AddThis](http://github.com/imagex/imagex_addthis) Social Media sharing, and its default configuration for News content. 
 * **imagex_news_workflow*: This extension module integrates with the ImageX [Workflow](http://github.com/imagex/imagex_workflow) component to provide a default publishing and scheduling workflow for News content.
 * **imagex_news_permissions*: This extension module of the News component provides default permissions for ImageX’s [User Roles](http://github.com/imagex/imagex_user_roles). These permissions meet the  requirements to be used in conjunction with the ImageX [Workflow](http://github.com/imagex/imagex_workflow).
 
