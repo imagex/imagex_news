@@ -86,7 +86,7 @@ function imagex_news_node_info() {
     'imagex_news' => array(
       'name' => t('News'),
       'base' => 'node_content',
-      'description' => '',
+      'description' => t('Use <em>news</em> to create time-sensitive information articles (e.g. Press Releases).'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
