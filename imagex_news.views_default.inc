@@ -135,59 +135,9 @@ function imagex_news_views_default_views() {
     'image_style' => 'news',
     'image_link' => 'content',
   );
-
-  /* Display: The Best of Linux News */
-  $handler = $view->new_display('panel_pane', 'The Best of Linux News', 'panel_pane_best_of_linux_news');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'The Best of Linux News';
-  $handler->display->display_options['display_description'] = 'A listing of 10 news items tagged with \'best-of\'.';
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Post date */
-  $handler->display->display_options['fields']['created']['id'] = 'created';
-  $handler->display->display_options['fields']['created']['table'] = 'node';
-  $handler->display->display_options['fields']['created']['field'] = 'created';
-  $handler->display->display_options['fields']['created']['label'] = '';
-  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['created']['date_format'] = 'time ago';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'imagex_news' => 'imagex_news',
-  );
-  /* Filter criterion: Content: Tags (field_tags) */
-  $handler->display->display_options['filters']['field_tags_tid']['id'] = 'field_tags_tid';
-  $handler->display->display_options['filters']['field_tags_tid']['table'] = 'field_data_field_tags';
-  $handler->display->display_options['filters']['field_tags_tid']['field'] = 'field_tags_tid';
-  $handler->display->display_options['filters']['field_tags_tid']['value'] = array(
-    0 => '6',
-  );
-  $handler->display->display_options['filters']['field_tags_tid']['reduce_duplicates'] = TRUE;
-  $handler->display->display_options['filters']['field_tags_tid']['vocabulary'] = 'tags';
   $export['news'] = $view;
+
+  features_alter_code('views_view', $export);
 
   return $export;
 }
