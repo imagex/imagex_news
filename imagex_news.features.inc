@@ -75,6 +75,8 @@ function imagex_news_image_default_styles() {
     ),
   );
 
+  features_alter_code('image', $styles);
+
   return $styles;
 }
 
@@ -92,5 +94,8 @@ function imagex_news_node_info() {
       'help' => '',
     ),
   );
+
+  features_alter_code('node', $items);
+
   return $items;
 }
