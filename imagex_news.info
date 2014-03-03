@@ -1,7 +1,7 @@
 name = News
 description = This component enables content management of the standard News content and its layout.
 core = 7.x
-package = Imagex
+package = ImageX
 version = 7.x-1.1
 project = imagex_news
 dependencies[] = ctools
@@ -33,7 +33,6 @@ features[image][] = news
 features[image][] = news_author
 features[node][] = imagex_news
 features[panelizer_defaults][] = node:imagex_news:default
-features[panelizer_defaults][] = node:imagex_news:default:default
 features[variable][] = additional_settings__active_tab_imagex_news
 features[variable][] = comment_anonymous_imagex_news
 features[variable][] = comment_default_mode_imagex_news

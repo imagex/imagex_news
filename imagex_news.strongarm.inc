@@ -13,6 +13,13 @@ function imagex_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'additional_settings__active_tab_imagex_news';
+  $strongarm->value = 'edit-scheduler';
+  $export['additional_settings__active_tab_imagex_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_imagex_news';
   $strongarm->value = 0;
   $export['comment_anonymous_imagex_news'] = $strongarm;
